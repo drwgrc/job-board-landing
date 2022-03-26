@@ -1,16 +1,24 @@
-import styles from './header.module.scss';
+import styles from './Header.module.scss';
 import { ReactComponent as Logo } from './../../assets/icons/logo.svg';
+import Navbar from '../Navbar/Navbar';
+import AccountButtons from '../AccountButtons/AccountButtons';
+import { ReactComponent as MenuIcon } from './../../assets/icons/menu.svg';
 
 const Header = () => {
   return (
-    <div className={styles.header}>
-      <div className='container'>
-        <div className={styles.wrapper}>
-          <div className={styles.header__logo}>
-            <Logo className={styles.header__logo_icon} />
+    <div className='container'>
+      <div className={styles.header}>
+        <div className={styles.header__logo}>
+          <Logo className={styles.header__logo_icon} />
+        </div>
+        <div className={styles.header__navbar_wrapper}>
+          <Navbar />
+          <div className={styles.header__navbar_icon}>
+            <MenuIcon className={styles.header__menu_icon} />
           </div>
-          <div className={styles.header__nav}>Nav</div>
-          <div className={styles.header__account_info}>Account Nav</div>
+        </div>
+        <div className={styles.header__account_buttons_wrapper}>
+          <AccountButtons />
         </div>
       </div>
     </div>

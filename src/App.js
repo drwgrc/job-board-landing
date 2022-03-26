@@ -1,7 +1,7 @@
 import styles from './styles/App.module.scss';
 import Home from './pages/Home';
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import LoadSpinner from './components/LoadSpinner/LoadSpinner';
 import { useState } from 'react';
 
