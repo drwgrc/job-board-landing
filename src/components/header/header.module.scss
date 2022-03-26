@@ -1,0 +1,26 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.header {
+  width: 100%;
+
+  &__logo_icon {
+    height: 100px;
+  }
+
+  &__nav {
+    width: 25%;
+    background-color: blue;
+    padding: 1rem;
+  }
+
+  &__account_info {
+    padding: 1rem;
+    background-color: yellow;
+  }
+}

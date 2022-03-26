@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './styles/App.module.scss';
+import Home from './pages/Home';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
+import LoadSpinner from './components/LoadSpinner/LoadSpinner';
+import { useState } from 'react';
 
-function App() {
+export default function App() {
+  const [isLoading, setLoading] = useState(true);
+
+  // timer for spinner
+  setTimeout(() => {
+    setLoading(false);
+  }, 3000);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      {isLoading && <LoadSpinner />}
+      {!isLoading && (
+        <>
+          <Header />
+          <Home />
+          <Footer />
+        </>
+      )}
     </div>
   );
 }
-
-export default App;
