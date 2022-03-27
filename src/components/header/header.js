@@ -1,8 +1,8 @@
 import styles from './Header.module.scss';
 import { ReactComponent as Logo } from './../../assets/icons/logo.svg';
-import Navbar from '../Navbar/Navbar';
-import AccountButtons from '../AccountButtons/AccountButtons';
+import Navbar from '../../src/components/Navbar/Navbar';
 import { ReactComponent as MenuIcon } from './../../assets/icons/menu.svg';
+import AccountButtons from '../../src/components/AccountButtons/AccountButtons';
 
 const Header = () => {
   return (
