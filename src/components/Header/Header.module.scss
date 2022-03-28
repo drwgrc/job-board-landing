@@ -1,58 +1,101 @@
 .header {
   width: 100%;
-  display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: blue;
-  padding: 0.5rem;
+  position: absolute;
 
-  &__logo_icon {
-    height: 100px;
-    width: 100px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
   }
 
-  &__navbar_wrapper {
-    background-color: blue;
-    padding: 1rem;
-    margin-left: 1rem;
+  &__logo {
+    flex-grow: 1;
   }
 
-  &__navbar_icon {
+  &__logoIcon {
+    height: 75px;
+    width: 75px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    font-size: 1rem;
+    font-weight: 700;
+    transition: all 0.3s ease 0s;
+    margin-left: 1.5rem;
+
+    &:hover {
+      color: teal;
+    }
+  }
+
+  &__buttonsWrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__loginBtn,
+  &__registerBtn {
+    background-color: steelblue;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__loginBtn {
+    background-color: transparent;
+    color: steelblue;
+    margin-right: 1rem;
+  }
+
+  &__menuIconWrapper {
     display: none;
   }
 
   &__account_buttons_wrapper {
-    width: 25%;
-    margin: 0 1rem;
     background: red;
-    margin-left: auto;
   }
 }
 
 @media only screen and (max-width: 1280px) {
   .header {
-    background-color: green;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .header {
-    background-color: yellow;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .header {
-    background-color: orange;
-
-    &__account_buttons_wrapper {
+    &__buttonsWrapper {
       display: none;
     }
 
-    &__navbar_wrapper {
-      margin-left: auto;
+    &__nav {
+      display: none;
     }
 
-    &__navbar_icon {
+    &__menuIconWrapper {
       display: block;
     }
   }
@@ -60,6 +103,5 @@
 
 @media only screen and (max-width: 640px) {
   .header {
-    background-color: red;
   }
 }
