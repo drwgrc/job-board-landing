@@ -7,7 +7,7 @@ const Header = () => {
     <div className={styles.header}>
       <div className='container'>
         <div className={styles.header__container}>
-          <div className={styles.header__logo}>
+          <div className={styles.header__logoWrapper}>
             <Logo className={styles.header__logoIcon} />
           </div>
           <nav className={styles.header__nav}>
