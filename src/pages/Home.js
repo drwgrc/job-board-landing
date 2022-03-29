@@ -2,7 +2,6 @@ import Hero from './../components/Hero/Hero';
 import CreateAccount from './../components/CreateAccount/CreateAccount';
 import TopCategories from './../components/TopCategories/TopCategories';
 import FeaturedJob from './../components/FeaturedJob/FeaturedJob';
-import JobsCategories from './../components/JobsCategories/JobsCategories';
 import Statistics from './../components/Statistics/Statistics';
 import CandidateOfDay from './../components/CandidateOfDay/CandidateOfDay';
 import Candidates from './../components/Candidates/Candidates';
@@ -19,7 +18,6 @@ const Home = () => {
           <CreateAccount />
           <TopCategories />
           <FeaturedJob />
-          <JobsCategories />
           <Statistics />
           <CandidateOfDay />
           <Candidates />
