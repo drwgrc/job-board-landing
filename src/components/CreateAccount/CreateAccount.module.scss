@@ -1,5 +1,110 @@
 .createAccount {
   width: 100%;
-  background: orange;
-  height: 100px;
+  margin: 10rem auto;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__textContainer {
+    width: 50%;
+    padding: 2rem;
+  }
+
+  &__textHeader {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    width: 80%;
+  }
+
+  &__headerColor {
+    color: steelblue;
+    font-weight: bolder;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+
+  &__btn {
+    font-size: 0.8rem;
+    background-color: steelblue;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+
+  &__cardsContainer {
+    width: 50%;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 3rem;
+    grid-column-gap: 2rem;
+  }
+
+  &__cardWrapper {
+    overflow: hidden;
+    padding: 1rem 1.5rem 2rem;
+    background: steelblue;
+    border-radius: 1.25rem;
+    &:nth-of-type(even) {
+      position: relative;
+      top: 25%;
+      background: orange;
+    }
+  }
+
+  &__cardNumber {
+    position: relative;
+    top: -25px;
+    left: -25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: steelblue;
+    &:nth-child(even) {
+      color: orange;
+    }
+  }
+
+  &__cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -20%;
+  }
+
+  &__cardIcon {
+    width: 50px;
+    height: 50px;
+    outline: white;
+  }
+
+  &__cardTitle {
+    width: 60%;
+    margin: 1.5rem 0;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  &__cardText {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+  }
 }
