@@ -28,7 +28,7 @@ const FeaturedJob = () => {
             dolores quos! Rerum!
           </p>
           <a href='#' className={styles.featuredJob__applyBtn}>
-            Create Account
+            Apply Now
           </a>
         </div>
         <div className={styles.featuredJob__jobInfographics}>

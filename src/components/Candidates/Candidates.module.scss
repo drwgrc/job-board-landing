@@ -1,5 +1,152 @@
 .candidates {
   width: 100%;
-  background: red;
-  height: 100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  &__textRow {
+    display: flex;
+    padding-bottom: 3rem;
+  }
+
+  &__header {
+    font-size: 2rem;
+    margin-right: 2rem;
+    white-space: nowrap;
+    line-height: 1.3;
+  }
+
+  &__headerColor {
+    color: steelblue;
+  }
+
+  &__text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    width: 30%;
+  }
+
+  &__btnWrapper {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &__browseBtn {
+    font-size: 0.9rem;
+    background-color: steelblue;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+
+  &__candidatesContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__candidateWrapper {
+    position: relative;
+    width: 24%;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(221, 221, 221, 0.7);
+    -moz-box-shadow: 0px 0px 15px 0px rgb(221, 221, 221, 0.7);
+    box-shadow: 0px 0px 15px 0px rgba(221, 221, 221, 0.7);
+  }
+
+  &__candidateHoverWrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      opacity: 1;
+      filter: opacity(30%);
+    }
+  }
+
+  &__candidateHoverWrapper &__candidateHoverBtn {
+    font-size: 0.9rem;
+    background-color: steelblue;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.5rem 2rem;
+  }
+
+  &__candidateContainer {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+
+  &__imgWrapper {
+    width: 100%;
+    height: 200px;
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    backface-visibility: hidden;
+    opacity: 1;
+  }
+
+  &__textBox {
+    padding: 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid steelblue;
+  }
+
+  &__stat {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  &__statIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(70, 130, 180, 0.4);
+    font-size: 0.6rem;
+    color: steelblue;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  &__statName {
+    font-size: 0.7rem;
+  }
 }

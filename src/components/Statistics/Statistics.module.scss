@@ -1,5 +1,61 @@
 .statistics {
   width: 100%;
-  background: indigo;
-  height: 100px;
+  margin: 0 auto;
+  background-color: steelblue;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__vectorWrapper {
+    width: 50%;
+    height: 325px;
+  }
+
+  &__vector {
+    width: 100%;
+    height: 100%;
+    background-image: url('./../../assets/images/statistics.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no;
+  }
+
+  &__textBox {
+    padding: 3rem 4rem;
+    width: 50%;
+    color: white;
+    text-align: center;
+  }
+
+  &__header {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+  }
+
+  &__dataContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__dataNumber {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
 }
