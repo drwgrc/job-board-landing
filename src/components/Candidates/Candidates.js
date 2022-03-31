@@ -45,9 +45,92 @@ const Candidates = () => {
               </div>
             </div>
             <div className={styles.candidates__candidateHoverWrapper}>
-              <a className={styles.candidates__candidateHoverBtn}>
-                View Profile
-              </a>
+              <div className={styles.candidates__candidateHoverBtnWrapper}>
+                <a className={styles.candidates__candidateHoverBtn}>
+                  View Profile
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.candidates__candidateWrapper}>
+            <div className={styles.candidates__candidateContainer}>
+              <div className={styles.candidates__imgWrapper}>
+                <img src={candidateImg} className={styles.candidates__img} />
+              </div>
+              <div className={styles.candidates__textBox}>
+                <p className={styles.candidates__name}>Eva Anderson</p>
+                <div className={styles.candidates__stat}>
+                  <div className={styles.candidates__statIcon}>W</div>
+                  <div className={styles.candidates__statName}>UI Designer</div>
+                </div>
+                <div className={styles.candidates__stat}>
+                  <div className={styles.candidates__statIcon}>W</div>
+                  <div className={styles.candidates__statName}>
+                    +7 Years Experience
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.candidates__candidateHoverWrapper}>
+              <div className={styles.candidates__candidateHoverBtnWrapper}>
+                <a className={styles.candidates__candidateHoverBtn}>
+                  View Profile
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.candidates__candidateWrapper}>
+            <div className={styles.candidates__candidateContainer}>
+              <div className={styles.candidates__imgWrapper}>
+                <img src={candidateImg} className={styles.candidates__img} />
+              </div>
+              <div className={styles.candidates__textBox}>
+                <p className={styles.candidates__name}>Eva Anderson</p>
+                <div className={styles.candidates__stat}>
+                  <div className={styles.candidates__statIcon}>W</div>
+                  <div className={styles.candidates__statName}>UI Designer</div>
+                </div>
+                <div className={styles.candidates__stat}>
+                  <div className={styles.candidates__statIcon}>W</div>
+                  <div className={styles.candidates__statName}>
+                    +7 Years Experience
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.candidates__candidateHoverWrapper}>
+              <div className={styles.candidates__candidateHoverBtnWrapper}>
+                <a className={styles.candidates__candidateHoverBtn}>
+                  View Profile
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.candidates__candidateWrapper}>
+            <div className={styles.candidates__candidateContainer}>
+              <div className={styles.candidates__imgWrapper}>
+                <img src={candidateImg} className={styles.candidates__img} />
+              </div>
+              <div className={styles.candidates__textBox}>
+                <p className={styles.candidates__name}>Eva Anderson</p>
+                <div className={styles.candidates__stat}>
+                  <div className={styles.candidates__statIcon}>W</div>
+                  <div className={styles.candidates__statName}>UI Designer</div>
+                </div>
+                <div className={styles.candidates__stat}>
+                  <div className={styles.candidates__statIcon}>W</div>
+                  <div className={styles.candidates__statName}>
+                    +7 Years Experience
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={styles.candidates__candidateHoverWrapper}>
+              <div className={styles.candidates__candidateHoverBtnWrapper}>
+                <a className={styles.candidates__candidateHoverBtn}>
+                  View Profile
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 .candidates {
   width: 100%;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem 10rem;
 
   &__container {
     display: flex;
@@ -71,22 +71,25 @@
     height: 100%;
     opacity: 0;
     transition: 0.3s ease;
-    background-color: red;
+    background-color: rgba(70, 130, 180, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     &:hover {
       opacity: 1;
-      filter: opacity(30%);
     }
   }
 
-  &__candidateHoverWrapper &__candidateHoverBtn {
+  &__candidateHoverBtn {
     font-size: 0.9rem;
-    background-color: steelblue;
+    background-color: white;
     border-radius: 0.5rem;
-    color: white;
+    color: steelblue;
+    font-weight: bold;
     padding: 0.5rem 2rem;
+    &:hover {
+    cursor: pointer;
+    }
   }
 
   &__candidateContainer {
