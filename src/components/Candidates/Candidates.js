@@ -1,5 +1,5 @@
-import styles from './Candidates.module.scss';
-import candidateImg from './../../assets/images/featured-job-img.jpg';
+import styles from "./Candidates.module.scss";
+import candidateImg from "./../../assets/images/featured-job-img.jpg";
 
 const Candidates = () => {
   return (
@@ -9,7 +9,7 @@ const Candidates = () => {
           <h3 className={styles.candidates__header}>
             Find <b>Candidates</b>
             <br />
-            From Recent{' '}
+            From Recent{" "}
             <span className={styles.candidates__headerColor}>CVs</span>
           </h3>
 

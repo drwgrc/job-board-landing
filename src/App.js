@@ -1,4 +1,3 @@
-import styles from './styles/App.module.scss';
 import Home from './pages/Home';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -14,12 +13,12 @@ export default function App() {
   }, 3000);
 
   return (
-    <div className={styles.app}>
+    <div>
       {isLoading && <LoadSpinner />}
       {!isLoading && (
         <>
-          <Header />
-          <Home />
+          {/* <Header />
+					<Home /> */}
           <Footer />
         </>
       )}

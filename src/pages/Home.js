@@ -9,24 +9,24 @@ import Testimonials from './../components/Testimonials/Testimonials';
 import CTA from './../components/CTA/CTA';
 import styles from './Home.module.scss';
 
-const Home = () => {
-  return (
-    <div className={styles.home}>
-      <Hero />
-      <div className='container'>
-        <div className={styles.home__container}>
-          <CreateAccount />
-          <TopCategories />
-          <FeaturedJob />
-          <Statistics />
-          <CandidateOfDay />
-          <Candidates />
-          <Testimonials />
-          <CTA />
-        </div>
-      </div>
-    </div>
-  );
-};
+// const Home = () => {
+// 	return (
+// 		// <div className={styles.home}>
+// 		// 	{/* <Hero />
+//     //   <div className='container'>
+//     //     <div className={styles.home__container}>
+//     //       <CreateAccount />
+//     //       <TopCategories />
+//     //       <FeaturedJob />
+//     //       <Statistics />
+//     //       <CandidateOfDay />
+//     //       <Candidates />
+//     //       <Testimonials />
+//     //       <CTA />
+//     //     </div>
+//     //   </div> */}
+// 		// </div>
+// 	// );
+// };
 
-export default Home;
+// export default Home;

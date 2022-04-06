@@ -1,0 +1,473 @@
+footer {
+  /* background-color: var(--main-color); */
+  padding: 6.4rem 2rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: auto;
+}
+
+.main {
+  /* background-color: lightblue; */
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: -2.4rem;
+  width: calc(100% + 2.4rem);
+  margin-left: -2.4rem;
+}
+
+.main > div {
+  padding-left: 2.4rem;
+  padding-top: 2.4rem;
+}
+
+.left {
+  /* background-color: lightgray; */
+  flex-basis: 100%;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.left > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.4rem;
+}
+
+.left > div:first-of-type {
+  margin-top: 0;
+  align-items: flex-start;
+}
+
+.left > div p,
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.left > div p {
+  margin-top: 2.4rem;
+}
+
+.left > div h6 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.left > div span {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.logo {
+  width: 7.5rem;
+  cursor: pointer;
+  display: inline-flex;
+
+  background-color: crimson;
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialLinks {
+  display: flex;
+  margin-top: 1.6rem;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.socialLinks a {
+  cursor: pointer;
+  color: #fff;
+}
+
+.socialLinks a button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2.4rem;
+  color: crimson;
+  padding: 0.8rem;
+  border-radius: 50%;
+  overflow: visible;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.socialLinks a button:hover {
+  background-color: rgba(99, 115, 129, 0.08);
+}
+
+.socialLinks a button > * {
+  width: 2rem;
+  height: 2rem;
+}
+
+.stayInTouch {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe {
+  margin-top: 1.6rem;
+  cursor: text;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  border-radius: 0.8rem;
+  padding-right: 0.4rem;
+  background-color: rgba(145, 158, 171, 0.08);
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.subscribe:hover {
+  background-color: rgba(145, 158, 171, 0.16);
+}
+
+.subscribe > input {
+  padding-block: 1.4rem;
+  padding-left: 1.2rem;
+  font-size: 1.4rem;
+  box-sizing: content-box;
+  width: 100%;
+  display: block;
+  background: none;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.subscribe > input::placeholder {
+  opacity: 1;
+  color: #919eab;
+}
+
+.subscribe > input:focus {
+  outline: 0;
+}
+
+.subscribe > button {
+  border-style: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 0 none;
+  margin: 0;
+  cursor: pointer;
+  appearance: none;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  min-width: 6.4rem;
+  padding: 0.9rem 1rem;
+  border-radius: 0.8rem;
+  background-color: crimson;
+  box-shadow: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  white-space: nowrap;
+  line-height: 1.5;
+  box-sizing: content-box;
+}
+
+.subscribe > button:hover {
+  background-color: rgb(179, 32, 14);
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.appBtns {
+  margin-top: 1.6rem;
+  display: flex;
+}
+
+.appBtns button {
+  border-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  outline: 0;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  min-width: 6.4rem;
+  font-size: 1.4rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  background: linear-gradient(180deg, #161c24 0%, #000 100%);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.appBtns button:hover {
+  box-shadow: none;
+  text-decoration: none;
+  background-color: rgba(145, 158, 171, 0.08);
+}
+
+.appBtns button:nth-of-type(2) {
+  margin-left: 1.6rem;
+}
+
+.appBtns button > span {
+  margin-right: 8px;
+  color: white;
+}
+
+.appBtns button > span > * {
+  width: 28px;
+  height: 28px;
+}
+
+.appBtns button > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.appBtns button > div > span {
+  font-size: 1.2rem;
+  opacity: 0.72;
+  margin: 0;
+  color: white;
+  font-weight: 400;
+}
+
+.appBtns button > div > h6 {
+  font-size: 1.7rem;
+}
+
+.right {
+  /* background-color: beige; */
+  flex-basis: 100%;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.desktopLinks {
+  display: none;
+  overflow: hidden;
+  height: 0;
+}
+
+.mobileLinks > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.2rem;
+}
+
+.mobileLinks > div:first-of-type {
+  margin-top: 0;
+}
+
+.mobileLinks > div > h6 {
+  margin: 0;
+  font-size: 1.7rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.mobileLinks > div > h6.toggleIcon > svg {
+  transform: rotate(0);
+}
+
+.mobileLinks > div > h6 > svg {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.4rem;
+  transform: rotate(-90deg);
+}
+
+.links {
+  margin-top: 1.2rem;
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  transition: height 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.links.open {
+  overflow: visible;
+  visibility: visible;
+  height: auto;
+}
+
+.linksWrapper {
+  display: flex;
+  width: 100%;
+}
+
+.linksInner {
+  width: 100%;
+}
+
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.8rem 2.4rem;
+}
+
+.linksGrid a {
+  margin: 0.8rem 0 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.linksGrid a:hover {
+  color: rgb(33, 43, 54);
+  text-decoration: underline;
+}
+
+hr {
+  margin: 0;
+  border-width: 0 0 thin;
+  border-style: solid;
+  border-color: rgba(145, 158, 171, 0.24);
+  /* background-color: antiquewhite; */
+}
+
+.bottom {
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.bottom > div {
+  padding-block: 2.4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom > div p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.bottom > div div {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom > div div a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bottom > div div a:hover {
+  text-decoration: underline;
+}
+
+.bottom > div div a:last-of-type {
+  margin-left: 2.4rem;
+}
+
+@media only screen and (min-width: 600px) {
+  footer {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
+  .left {
+    flex-basis: 100%;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+
+  .right {
+    flex-basis: 100%;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  footer {
+    padding-block: 8rem;
+  }
+
+  .main {
+    justify-content: space-between;
+  }
+
+  .left {
+    flex-basis: 33.33%;
+    flex-grow: 0;
+    max-width: 33.33%;
+  }
+
+  .right {
+    flex-basis: 50%;
+    flex-grow: 0;
+    max-width: 50%;
+  }
+
+  .mobileLinks {
+    display: none;
+  }
+
+  .desktopLinks {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: space-between;
+    height: auto;
+    margin: -1.2rem;
+  }
+
+  .linksCol {
+    padding-bottom: 0.8rem;
+    margin: 1.2rem;
+    width: calc(33.33% - 2.4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .linksCol > h6 {
+    font-size: 1.8rem;
+  }
+
+  .linksCol > a {
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    color: rgb(99, 115, 129);
+  }
+
+  .linksCol > a:hover {
+    color: rgb(33, 43, 54);
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  footer {
+    max-width: 120rem;
+  }
+}
