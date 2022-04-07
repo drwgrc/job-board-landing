@@ -7,26 +7,15 @@ import CandidateOfDay from './../components/CandidateOfDay/CandidateOfDay';
 import Candidates from './../components/Candidates/Candidates';
 import Testimonials from './../components/Testimonials/Testimonials';
 import CTA from './../components/CTA/CTA';
+import Subscription from '../components/Subscription/Subscription';
 import styles from './Home.module.scss';
 
-// const Home = () => {
-// 	return (
-// 		// <div className={styles.home}>
-// 		// 	{/* <Hero />
-//     //   <div className='container'>
-//     //     <div className={styles.home__container}>
-//     //       <CreateAccount />
-//     //       <TopCategories />
-//     //       <FeaturedJob />
-//     //       <Statistics />
-//     //       <CandidateOfDay />
-//     //       <Candidates />
-//     //       <Testimonials />
-//     //       <CTA />
-//     //     </div>
-//     //   </div> */}
-// 		// </div>
-// 	// );
-// };
+const Home = () => {
+  return (
+    <div className={styles.home}>
+      <Subscription />
+    </div>
+  );
+};
 
-// export default Home;
+export default Home;

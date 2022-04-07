@@ -17,8 +17,7 @@ export default function App() {
       {isLoading && <LoadSpinner />}
       {!isLoading && (
         <>
-          {/* <Header />
-					<Home /> */}
+          <Home />
           <Footer />
         </>
       )}

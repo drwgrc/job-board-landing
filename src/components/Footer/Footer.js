@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className='container'>
+      <footer>
         <div className={styles.main}>
           <div className={styles.left}>
             <div>
