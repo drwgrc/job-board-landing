@@ -1,0 +1,171 @@
+.downloadApp {
+  background-color: rgba(250, 84, 28, 0.08);
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6.4rem 0;
+}
+
+.content > div:first-of-type > h2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.content > div:first-of-type > p {
+  margin: 2.4rem 0 4.8rem;
+  color: rgb(33, 43, 54);
+}
+
+.appBtns {
+  display: flex;
+}
+
+.appBtns button {
+  border-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  outline: 0;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  min-width: 6.4rem;
+  font-size: 1.4rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  background: linear-gradient(180deg, #161c24 0%, #000 100%);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.appBtns button:hover {
+  box-shadow: none;
+  text-decoration: none;
+  background-color: rgba(145, 158, 171, 0.08);
+}
+
+.appBtns button:nth-of-type(2) {
+  margin-left: 1.6rem;
+}
+
+.appBtns button > span {
+  margin-right: 8px;
+  color: white;
+}
+
+.appBtns button > span > * {
+  width: 28px;
+  height: 28px;
+}
+
+.appBtns button > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.appBtns button > div > span {
+  font-size: 1.2rem;
+  opacity: 0.72;
+  margin: 0;
+  color: white;
+  font-weight: 400;
+}
+
+.appBtns button > div > h6 {
+  font-size: 1.7rem;
+}
+
+.content > div:nth-of-type(2) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content > div:nth-of-type(2) > span {
+  width: 35rem;
+  height: 66rem;
+  line-height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.imgWrapper {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+}
+
+.imgWrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 600px) {
+  .content > div:first-of-type > h2 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .downloadApp {
+    padding-block: 16.8rem;
+    background-color: unset;
+  }
+
+  .content {
+    position: relative;
+    text-align: unset;
+    padding-left: 8rem;
+    border-radius: 2.4rem;
+    background-color: rgba(250, 84, 28, 0.08);
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .content > div:first-of-type {
+    align-items: flex-start;
+    max-width: 30rem;
+    margin: 12rem 0;
+  }
+
+  .content > div:first-of-type > h2 {
+    font-size: 4.4rem;
+  }
+
+  .content > div:nth-of-type(2) {
+    margin-left: unset;
+    margin-right: unset;
+    margin-top: 8rem;
+    right: 15rem;
+    top: -25rem;
+    position: absolute;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content > div:nth-of-type(2) > span {
+    width: 40rem;
+    height: 75rem;
+    line-height: 0;
+    display: block;
+    overflow: hidden;
+  }
+}

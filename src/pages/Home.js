@@ -7,12 +7,13 @@ import CandidateOfDay from './../components/CandidateOfDay/CandidateOfDay';
 import Candidates from './../components/Candidates/Candidates';
 import Testimonials from './../components/Testimonials/Testimonials';
 import CTA from './../components/CTA/CTA';
+import DownloadApp from '../components/DownloadApp/DownloadApp';
 import Subscription from '../components/Subscription/Subscription';
-import styles from './Home.module.scss';
 
 const Home = () => {
   return (
-    <div className={styles.home}>
+    <div>
+      <DownloadApp />
       <Subscription />
     </div>
   );

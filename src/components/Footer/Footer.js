@@ -158,7 +158,7 @@ const Footer = () => {
       <hr />
       <div className={styles.bottom}>
         <div>
-          <p>&copy; 2021. All rights reserved</p>
+          <p>&copy; 2022. All rights reserved</p>
           <div>
             <a href='#'>Help Center</a>
             <a href='#'>Terms of Service</a>
