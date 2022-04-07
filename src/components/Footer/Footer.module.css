@@ -185,7 +185,7 @@ a {
 }
 
 .subscribe > button:hover {
-  background-color: rgb(179, 32, 14);
+  background-color: #b31b39;
   text-decoration: none;
   box-shadow: none;
 }

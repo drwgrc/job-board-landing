@@ -116,7 +116,7 @@
 
 .btnWrapper > button:hover {
   box-shadow: none;
-  background-color: #b3200e;
+  background-color: #b31b39;
   text-decoration: none;
 }
 
@@ -132,5 +132,17 @@
 @media only screen and (min-width: 600px) {
   .content h2 {
     font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .content h2 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content h2 {
+    font-size: 4.8rem;
   }
 }
