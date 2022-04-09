@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+.swiper-wrapper {
+  height: 100% !important;
+}
+
 @media only screen and (min-width: 600px) {
   .container {
     padding: 0 2.4rem;

@@ -1,0 +1,164 @@
+.testimonials {
+  background-color: #f9fafb;
+  padding-block: 8rem;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: -2.4rem;
+  margin-left: -2.4rem;
+  width: calc(100% + 2.4rem);
+}
+
+.top > div {
+  padding-left: 2.4rem;
+  padding-top: 2.4rem;
+  flex-basis: 100%;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.top > div > h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #212b36;
+  margin-bottom: 4rem;
+}
+
+.swiperSlide > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stars {
+  display: inline-flex;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+}
+
+.starsWrapper {
+  display: flex;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.starWrapper > svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #faaf00;
+}
+
+.swiperSlide > div > p:first-of-type {
+  margin-block: 2.4rem;
+}
+
+.swiperSlide > div > h6 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #212b36;
+}
+
+.swiperSlide > div > p:nth-of-type(2) {
+  font-size: 1.3rem;
+  color: #637381;
+}
+
+.bottom {
+  padding-top: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.swiperNavPrev,
+.swiperNavNext {
+  display: inline-flex;
+}
+
+.swiperNavPrev:hover,
+.swiperNavNext:hover {
+  transform: scale(1.09);
+}
+
+.swiperNavPrev > button,
+.swiperNavNext > button {
+  display: flex;
+  border-style: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+  flex: 0 0 auto;
+  font-size: 2.4rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #637381;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+
+.swiperNavPrev > button:hover,
+.swiperNavNext > button:hover {
+  color: #212b36;
+  background-color: rgba(99, 115, 129, 0.08);
+}
+
+.swiperNavPrev > button > svg,
+.swiperNavNext > button > svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.swiperNavPrev > button {
+  transform: scaleX(-1);
+}
+
+@media only screen and (min-width: 600px) {
+  .top > div > h2 {
+    font-size: 4rem;
+  }
+
+  .swiperSlide > div > h6 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .testimonials {
+    padding-block: 12rem;
+  }
+
+  .top > div {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .swiperSlide > div > p:first-of-type {
+    font-size: 2rem;
+  }
+
+  .top > div > h2 {
+    font-size: 4.4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .top > div > h2 {
+    font-size: 4.8rem;
+  }
+
+  .swiperSlide > div > h6 {
+    font-size: 2rem;
+  }
+}

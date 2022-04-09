@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Clients.module.css';
 import IMGURLS from './Clients.data';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade } from 'swiper';
 import 'swiper/css/bundle';
 
 const Clients = () => {
