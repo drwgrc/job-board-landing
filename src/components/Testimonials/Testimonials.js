@@ -18,7 +18,7 @@ const Testimonials = () => {
       <div className='container'>
         <div className={styles.top}>
           <div>
-            <h2>What Our Customer Say</h2>
+            <h2>What Our Customers Say</h2>
             <Swiper
               navigation={{
                 prevEl: swiperNavPrevRef.current,
@@ -210,13 +210,13 @@ const Testimonials = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          <div className={styles.swiperNavPrev} ref={swiperNavPrevRef}>
-            <button>
+          <div className={styles.swiperNavPrev}>
+            <button ref={swiperNavPrevRef}>
               <ArrowRightAltIcon />
             </button>
           </div>
-          <div className={styles.swiperNavNext} ref={swiperNavNextRef}>
-            <button>
+          <div className={styles.swiperNavNext}>
+            <button ref={swiperNavNextRef}>
               <ArrowRightAltIcon />
             </button>
           </div>

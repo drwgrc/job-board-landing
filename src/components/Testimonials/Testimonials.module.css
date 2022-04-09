@@ -140,8 +140,8 @@
   }
 
   .top > div {
-    flex-basis: 50%;
-    max-width: 50%;
+    flex-basis: 55%;
+    max-width: 55%;
   }
 
   .swiperSlide > div > p:first-of-type {
