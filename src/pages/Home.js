@@ -1,13 +1,15 @@
+import GlobalConnections from '../components/GlobalConnections/GlobalConnections';
+import PostJob from '../components/PostJob/PostJob';
 import Testminonials from './../components/Testimonials/Testimonials';
 import Clients from './../components/Clients/Clients';
 import Blog from '../components/Blog/Blog';
 import DownloadApp from '../components/DownloadApp/DownloadApp';
 import Subscription from '../components/Subscription/Subscription';
-import PostJob from '../components/PostJob/PostJob';
 
 const Home = () => {
   return (
     <div>
+      <GlobalConnections />
       <PostJob />
       <Testminonials />
       <Clients />

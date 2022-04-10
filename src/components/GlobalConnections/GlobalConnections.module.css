@@ -1,0 +1,264 @@
+.globalConnections {
+  padding-block: 6.4rem;
+}
+
+.imgWrapper {
+  display: none;
+  width: 78rem;
+  height: 65rem;
+  background-image: url('../../assets/images/globe.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: -4rem;
+  left: -6.4rem;
+  opacity: 0.65;
+  position: absolute;
+  color: #919eab;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -2.4rem;
+  margin-left: -2.4rem;
+  width: calc(100% + 2.4rem);
+}
+
+.text > div {
+  padding-left: 2.4rem;
+  padding-top: 2.4rem;
+  flex-basis: 100%;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.content > h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.content > p {
+  margin: 2.4rem 0 4rem;
+  color: #637381;
+}
+
+.content > a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: crimson;
+  color: #fff;
+  height: 4.8rem;
+  text-transform: capitalize;
+  min-width: 6.4rem;
+  padding: 0.8rem 2.2rem;
+  border-radius: 0.8rem;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+}
+
+.content > a:hover {
+  background-color: #b31b39;
+}
+
+.iconWrapper {
+  display: inline-flex;
+  margin-left: 0.8rem;
+}
+
+.iconWrapper > svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  color: #fff;
+}
+
+.styling {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  inset: 0px;
+  border-radius: inherit;
+}
+
+.gridContainer {
+  width: 100%;
+  display: block;
+  padding: 0 2rem;
+  margin: 0 auto;
+  margin-top: 2.4rem;
+}
+
+.grid {
+  display: grid;
+  max-width: 44.8rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.4rem;
+}
+
+.country {
+  max-width: 21.2rem;
+  width: 100%;
+  display: inline-block;
+  box-shadow: -16px 16px 56px -8px rgba(145, 158, 171, 0.16);
+  transition: box-shadow transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-image: none;
+  border-radius: 1.6rem;
+}
+
+.country:hover {
+  box-shadow: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+}
+
+.country > div:first-of-type {
+  overflow: hidden;
+}
+
+.country > div:first-of-type > span {
+  width: 100%;
+  padding-top: calc(100% / 3 * 4);
+  overflow: hidden;
+  position: relative;
+  display: block;
+  line-height: 0;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.country:hover > div:first-of-type > span {
+  transform: scale(1.1);
+}
+
+.countryWrapper {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 0;
+  position: absolute;
+  background-size: cover !important;
+  transform: none;
+}
+
+.country:hover > .countryWrapper {
+  transform: scale(1.1) translateZ(0);
+}
+
+.countryWrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.country > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.country > div:nth-of-type(2) > h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.country > div:nth-of-type(2) > p {
+  font-size: 1.3rem;
+  margin-top: 0.8rem;
+  color: #919eab;
+}
+
+@media only screen and (min-width: 600px) {
+  .content > h2 {
+    font-size: 4rem;
+  }
+
+  .gridContainer {
+    padding: 0 2.4rem;
+  }
+
+  .grid {
+    max-width: 68.4rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .globalConnections {
+    padding-block: 12rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .imgWrapper {
+    display: block;
+  }
+
+  .text {
+    justify-content: center;
+  }
+
+  .text > div {
+    flex-basis: 45%;
+    max-width: 45%;
+  }
+
+  .content {
+    padding-top: 8rem;
+  }
+
+  .content > h2 {
+    font-size: 4.4rem;
+  }
+
+  .gridContainer {
+    margin-top: 4.8rem;
+  }
+
+  .grid {
+    max-width: 90rem;
+  }
+
+  .country {
+    max-width: 28.4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .content > h2 {
+    font-size: 4.8rem;
+  }
+
+  .gridContainer {
+    max-width: 120rem;
+  }
+
+  .grid {
+    max-width: 120rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

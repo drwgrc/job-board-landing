@@ -1,18 +1,15 @@
-import React, { useRef } from 'react';
 import styles from './Testimonials.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, EffectFade } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ArrowRightAltRoundedIcon from '@mui/icons-material/ArrowRightAltRounded';
 import StarIcon from '@mui/icons-material/Star';
 import REVIEWS from './Testimonials.data';
+import cls from 'classnames';
 
 const Testimonials = () => {
-  const swiperNavPrevRef = useRef(null);
-  const swiperNavNextRef = useRef(null);
-
   return (
     <section className={styles.testimonials}>
       <div className='container'>
@@ -21,8 +18,8 @@ const Testimonials = () => {
             <h2>What Our Customers Say</h2>
             <Swiper
               navigation={{
-                prevEl: swiperNavPrevRef.current,
-                nextEl: swiperNavNextRef.current,
+                prevEl: `.swiperNavPrev`,
+                nextEl: `.swiperNavNext`,
               }}
               loop={true}
               modules={[Navigation, EffectFade]}
@@ -210,14 +207,14 @@ const Testimonials = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          <div className={styles.swiperNavPrev}>
-            <button ref={swiperNavPrevRef}>
-              <ArrowRightAltIcon />
+          <div className={cls('swiperNavPrev', styles.swiperNavPrev)}>
+            <button>
+              <ArrowRightAltRoundedIcon />
             </button>
           </div>
-          <div className={styles.swiperNavNext}>
-            <button ref={swiperNavNextRef}>
-              <ArrowRightAltIcon />
+          <div className={cls('swiperNavNext', styles.swiperNavNext)}>
+            <button>
+              <ArrowRightAltRoundedIcon />
             </button>
           </div>
         </div>
