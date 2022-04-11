@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
 import styles from './Clients.module.css';
 import IMGURLS from './Clients.data';
-import 'swiper/css/bundle';
 
 const Clients = () => {
   return (

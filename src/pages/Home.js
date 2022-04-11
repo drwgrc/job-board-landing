@@ -1,3 +1,4 @@
+import TopCompanies from '../components/TopCompanies/TopCompanies';
 import HotCategories from '../components/HotCategories/HotCategories';
 import GlobalConnections from '../components/GlobalConnections/GlobalConnections';
 import PostJob from '../components/PostJob/PostJob';
@@ -10,6 +11,7 @@ import Subscription from '../components/Subscription/Subscription';
 const Home = () => {
   return (
     <div>
+      <TopCompanies />
       <HotCategories />
       <GlobalConnections />
       <PostJob />
