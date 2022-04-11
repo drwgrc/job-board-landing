@@ -1,9 +1,9 @@
 import styles from './HotCategories.module.css';
 import CATEGORIES from './HotCategories.data';
 import * as icons from '@mui/icons-material';
+import ArrowRightAltRoundedIcon from '@mui/icons-material/ArrowRightAltRounded';
 
 const HotCategories = () => {
-  console.log(CATEGORIES[0]);
   return (
     <section className={styles.hotCategories}>
       <div className='container'>
@@ -23,6 +23,15 @@ const HotCategories = () => {
               </div>
             );
           })}
+        </div>
+        <div className={styles.btnWrapper}>
+          <button>
+            View All Categories
+            <span className={styles.btnIconWrapper}>
+              <ArrowRightAltRoundedIcon />
+            </span>
+            <span className={styles.styling} />
+          </button>
         </div>
       </div>
     </section>

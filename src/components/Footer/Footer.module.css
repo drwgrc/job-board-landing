@@ -341,7 +341,7 @@ a {
   text-decoration: underline;
 }
 
-hr {
+.footer hr {
   margin: 0;
   border-width: 0 0 thin;
   border-style: solid;

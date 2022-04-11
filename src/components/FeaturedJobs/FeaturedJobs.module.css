@@ -1,0 +1,329 @@
+.featuredJobs {
+  padding-block: 8rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(145, 158, 171, 0),
+    rgba(145, 158, 171, 0.12)
+  );
+}
+
+.text {
+  text-align: center;
+  width: calc(100% + 1.6rem);
+  margin-left: -1.6rem;
+  margin-top: -1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text > div {
+  padding-top: 1.6rem;
+  padding-left: 1.6rem;
+  flex-basis: 100%;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+.text > div > span {
+  font-weight: 600;
+  color: #919eab;
+  font-size: 1.2rem;
+}
+
+.text > div > h3 {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.grid {
+  padding-block: 6.4rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3.2rem;
+}
+
+.box {
+  background-color: #fff;
+  color: rgb(33, 43, 54);
+  box-shadow: rgba(145, 158, 171, 0.1) -8px 8px 24px -4px;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  overflow: hidden;
+  border-radius: 1.6rem;
+  position: relative;
+}
+
+.box:hover {
+  box-shadow: rgba(145, 158, 171, 0.24) -24px 24px 72px -8px;
+}
+
+.heartWrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  outline: rgb(99, 115, 129) none 0;
+  color: rgb(99, 115, 129);
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  appearance: none;
+  border-radius: 50%;
+  padding: 0.8rem;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+}
+
+.heartWrapper:hover {
+  background-color: rgba(255, 72, 66, 0.08);
+}
+
+.heartWrapper.active > svg {
+  color: rgb(255, 72, 66);
+}
+
+.heartWrapper > svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.styling {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  inset: 0px;
+  border-radius: inherit;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem 2.4rem 0;
+}
+
+.top > div:first-of-type {
+  display: flex;
+  align-items: center;
+}
+
+.top > div:first-of-type > span {
+  line-height: 0;
+  display: block;
+  overflow: hidden;
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 0.8rem;
+}
+
+.logoWrapper {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+}
+
+.logoWrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.top > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  margin: 2.4rem 0 1.6rem;
+}
+
+.top > div:nth-of-type(2) > a {
+  font-family: 'Barlows', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.top > div:nth-of-type(2) > p {
+  font-size: 1.3rem;
+  color: rgb(34, 184, 207);
+  margin-top: 0.4rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  color: rgb(99, 115, 129);
+  font-size: 1.3rem;
+}
+
+.location > svg {
+  margin-right: 0.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.top > span {
+  font-size: 1.2rem;
+  color: rgb(145, 158, 171);
+}
+
+hr {
+  margin-block: 1.6rem;
+  border-width: 0 0 thin;
+  border-color: rgba(145, 158, 171, 0.24);
+  border-style: dashed;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 1.2rem);
+  margin-left: -1.2rem;
+  margin-top: -1.2rem;
+  padding: 0 2.4rem 2.4rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: rgb(99, 115, 129);
+}
+
+.bottom > div {
+  padding-left: 1.2rem;
+  padding-top: 1.2rem;
+  flex-basis: 50%;
+  flex-grow: 0;
+  max-width: 50%;
+}
+
+.bottom > div > div {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.bottom > div > div > svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.8rem;
+  color: rgb(99, 115, 129);
+  text-transform: capitalize;
+}
+
+.btnWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnWrapper > button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  position: relative;
+  background-color: transparent;
+  outline: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  min-width: 6.4rem;
+  height: 4.8rem;
+  padding: 0.7rem 2.1rem;
+  border-radius: 0.8rem;
+  box-shadow: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-color: rgba(145, 158, 171, 0.32);
+}
+
+.btnWrapper > button:hover {
+  background-color: rgba(145, 158, 171, 0.08);
+  box-shadow: none;
+  border-color: #212b36;
+  text-decoration: none;
+}
+
+.btnIconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -0.4rem;
+  margin-left: 0.8rem;
+  color: inherit;
+}
+
+.btnIconWrapper > svg {
+  color: inherit;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.styling {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  inset: 0px;
+  border-radius: inherit;
+}
+
+@media only screen and (min-width: 600px) {
+  .text > div > h3 {
+    font-size: 2.6rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top > div:nth-of-type(2) > a {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .featuredJobs {
+    padding-block: 12rem;
+  }
+
+  .text {
+    text-align: unset;
+    width: calc(100% + 3.2rem);
+    margin-top: -3.2rem;
+    margin-left: -3.2rem;
+  }
+
+  .text > div {
+    padding-top: 3.2rem;
+    padding-left: 3.2rem;
+  }
+
+  .text > div:first-of-type {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+
+  .text > div:nth-of-type(2) {
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+  }
+
+  .text > div > h3 {
+    font-size: 3rem;
+  }
+
+  .grid {
+    padding-block: 8rem;
+    row-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .text > div > h3 {
+    font-size: 3.2rem;
+  }
+}

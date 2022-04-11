@@ -1,3 +1,6 @@
+import Hero from '../components/Hero/Hero';
+import UploadResume from '../components/UploadResume/UploadResume';
+import FeaturedJobs from '../components/FeaturedJobs/FeaturedJobs';
 import TopCompanies from '../components/TopCompanies/TopCompanies';
 import HotCategories from '../components/HotCategories/HotCategories';
 import GlobalConnections from '../components/GlobalConnections/GlobalConnections';
@@ -10,7 +13,10 @@ import Subscription from '../components/Subscription/Subscription';
 
 const Home = () => {
   return (
-    <div>
+    <>
+      <Hero />
+      <UploadResume />
+      <FeaturedJobs />
       <TopCompanies />
       <HotCategories />
       <GlobalConnections />
@@ -20,7 +26,7 @@ const Home = () => {
       <Blog />
       <DownloadApp />
       <Subscription />
-    </div>
+    </>
   );
 };
 
