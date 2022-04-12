@@ -1,8 +1,13 @@
 import styles from './FeaturedJobs.module.css';
 import JOBS from './FeaturedJobs.data';
 import ArrowRightAltRoundedIcon from '@mui/icons-material/ArrowRightAltRounded';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import SignalCellularAltOutlinedIcon from '@mui/icons-material/SignalCellularAltOutlined';
+import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
+import LocalAtmOutlinedIcon from '@mui/icons-material/LocalAtmOutlined';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import { useState } from 'react';
 import cls from 'classnames';
 
@@ -38,7 +43,11 @@ const FeaturedJobs = () => {
                   )}
                   onClick={heartToggle}
                 >
-                  {isHeartActive ? <FavoriteIcon /> : <FavoriteBorderIcon />}
+                  {isHeartActive ? (
+                    <FavoriteIcon />
+                  ) : (
+                    <FavoriteBorderOutlinedIcon />
+                  )}
                   <span className={styles.styling} />
                 </span>
                 <div className={styles.top}>
@@ -53,7 +62,7 @@ const FeaturedJobs = () => {
                     <a href='#'>{job.title}</a>
                     <p>{job.company}</p>
                     <div className={styles.location}>
-                      <ArrowRightAltRoundedIcon />
+                      <LocationOnOutlinedIcon />
                       {job.location}
                     </div>
                   </div>
@@ -63,25 +72,25 @@ const FeaturedJobs = () => {
                 <div className={styles.bottom}>
                   <div>
                     <div>
-                      <ArrowRightAltRoundedIcon />
+                      <SignalCellularAltOutlinedIcon />
                       {job.experience} year exp
                     </div>
                   </div>
                   <div>
                     <div>
-                      <ArrowRightAltRoundedIcon />
+                      <AccessTimeOutlinedIcon />
                       {job.type}
                     </div>
                   </div>
                   <div>
                     <div>
-                      <ArrowRightAltRoundedIcon />
+                      <LocalAtmOutlinedIcon />
                       {job.pay}
                     </div>
                   </div>
                   <div>
                     <div>
-                      <ArrowRightAltRoundedIcon />
+                      <PersonOutlineOutlinedIcon />
                       {job.level}
                     </div>
                   </div>
