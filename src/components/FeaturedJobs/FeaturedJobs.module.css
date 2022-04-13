@@ -168,7 +168,7 @@
   color: rgb(145, 158, 171);
 }
 
-hr {
+.box > hr {
   margin-block: 1.6rem;
   border-width: 0 0 thin;
   border-color: rgba(145, 158, 171, 0.24);
