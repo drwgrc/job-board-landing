@@ -1,0 +1,201 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background-image: none;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: 0;
+  color: #fff;
+  box-shadow: none;
+  background-color: transparent;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.header > div:first-of-type {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 5.5rem;
+  height: 6.4rem;
+  color: #fff;
+  background-color: transparent;
+  transition: height 250ms cubic-bezier(0.4, 0, 0.6, 1) 0ms,
+    background-color 250ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+}
+
+.header > div.scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.header > div:nth-of-type(2) {
+  display: none;
+}
+
+.header > .scrolling {
+  display: block !important;
+  position: absolute;
+  width: calc(100% - 4.8rem);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2.4rem;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: rgb(145, 158, 171) -23px 16px 56px -8px;
+}
+
+.header > div > div {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 7.5rem;
+  cursor: pointer;
+  display: inline-flex;
+  background-color: crimson;
+  color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space {
+  flex-grow: 1;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links > div {
+  display: inline-flex;
+  transform: none;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.links > div:hover {
+  transform: scale(1.09);
+}
+
+.links > div:nth-of-type(2) {
+  margin-left: 1.6rem;
+}
+
+.links > div > button {
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-style: none;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.header > div.scrolled > div > .links > div > button {
+  color: rgb(33, 43, 54);
+}
+
+.links > div > button:hover {
+  background-color: rgba(99, 115, 129, 0.2);
+}
+
+.links > div > button > svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.links > hr {
+  margin-left: 1.6rem;
+  flex-shrink: 0;
+  border-width: 0 thin 0 0;
+  border-style: solid;
+  border-color: rgba(145, 158, 171, 0.24);
+  height: 2.4rem;
+}
+
+.mobileMenu {
+  display: inline-flex;
+  transform: none;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.mobileMenu:hover {
+  transform: scale(1.09);
+}
+
+.mobileMenu > button {
+  color: #fff;
+  border-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  outline: none;
+  border: 0 none;
+  margin-left: 0.8rem;
+  cursor: pointer;
+  text-align: center;
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  overflow: visible;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.header > div.scrolled > div > .mobileMenu > button {
+  color: rgb(33, 43, 54);
+}
+
+.mobileMenu > button:hover {
+  background-color: rgba(99, 115, 129, 0.2);
+}
+
+.mobileMenu > button > svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .header > div:first-of-type {
+    min-height: 6.4rem;
+  }
+
+  .header > div > div {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .header > div:first-of-type {
+    height: 9.6rem;
+  }
+
+  .header > div.scrolled {
+    height: 7.6rem;
+  }
+}

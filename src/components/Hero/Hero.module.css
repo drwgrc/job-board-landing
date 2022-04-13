@@ -138,6 +138,10 @@
   box-sizing: content-box;
 }
 
+.section > div > input:focus {
+  outline: 0;
+}
+
 .section > div > input::placeholder {
   color: #919eab;
   font-size: 1.4rem;
@@ -166,6 +170,11 @@
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.search > button:hover {
+  box-shadow: none;
+  background-color: #b31b39;
 }
 
 .search > button > svg {

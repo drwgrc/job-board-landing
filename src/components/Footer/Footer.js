@@ -155,7 +155,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <hr />
+      <hr className={styles.footerLine} />
       <div className={styles.bottom}>
         <div>
           <p>&copy; 2022. All rights reserved</p>

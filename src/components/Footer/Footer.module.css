@@ -341,12 +341,11 @@ a {
   text-decoration: underline;
 }
 
-.footer hr {
+.footerLine {
   margin: 0;
   border-width: 0 0 thin;
   border-style: solid;
   border-color: rgba(145, 158, 171, 0.24);
-  /* background-color: antiquewhite; */
 }
 
 .bottom {

@@ -1,6 +1,8 @@
 import Home from './pages/Home';
 import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 import LoadSpinner from './components/LoadSpinner/LoadSpinner';
+import MenuModal from './components/MenuModal/MenuModal';
 import { useState } from 'react';
 
 export default function App() {
@@ -16,10 +18,12 @@ export default function App() {
       {isLoading && <LoadSpinner />}
       {!isLoading && (
         <>
+          <Header />
           <Home />
           <Footer />
         </>
       )}
+      <MenuModal />
     </div>
   );
 }
