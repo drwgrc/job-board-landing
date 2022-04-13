@@ -22,6 +22,14 @@ const Header = () => {
       <div className={`${scrolling ? `${styles.scrolled}` : ``}`}>
         <div>
           <div className={styles.logo}>NUJOBS</div>
+          <div className={styles.desktopLinks}>
+            <a href='#'>Home</a>
+            <a href='#'>Jobs</a>
+            <a href='#'>Candidates</a>
+            <a href='#'>Employers</a>
+            <a href='#'>Blog</a>
+            <a href='#'>Contact</a>
+          </div>
           <div className={styles.space} />
           <div className={styles.links}>
             <div>

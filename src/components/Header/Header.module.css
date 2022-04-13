@@ -3,7 +3,7 @@
   flex-direction: column;
   background-image: none;
   width: 100%;
-  z-index: 100;
+  z-index: 1100;
   position: fixed;
   top: 0;
   left: auto;
@@ -41,13 +41,14 @@
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -1;
   height: 2.4rem;
   border-radius: 50%;
   margin: auto;
   box-shadow: rgb(145, 158, 171) -23px 16px 56px -8px;
 }
 
-.header > div > div {
+.header > div:first-of-type > div {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -67,6 +68,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.desktopLinks {
+  display: none;
 }
 
 .space {
@@ -184,6 +189,11 @@
     min-height: 6.4rem;
   }
 
+  .header > div:first-of-type > div {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+
   .header > div > div {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
@@ -197,5 +207,49 @@
 
   .header > div.scrolled {
     height: 7.6rem;
+  }
+
+  .desktopLinks {
+    display: flex;
+    margin-left: 4.8rem;
+  }
+
+  .desktopLinks > a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.4rem;
+    position: relative;
+    margin-left: 4.8rem;
+    transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+
+  .desktopLinks > a:hover {
+    opacity: 0.75;
+  }
+
+  .desktopLinks > a:first-of-type {
+    margin-left: 0;
+  }
+
+  div.scrolled .desktopLinks > a {
+    color: rgb(99, 115, 129) !important;
+  }
+
+  .mobileMenu {
+    display: none;
+  }
+
+  .links > hr {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header > div:first-of-type > div {
+    max-width: 120rem;
   }
 }

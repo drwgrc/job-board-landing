@@ -125,4 +125,8 @@
   .topCompanies > div > h2 {
     font-size: 4.8rem;
   }
+
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }

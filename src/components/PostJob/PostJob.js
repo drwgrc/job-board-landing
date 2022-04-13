@@ -9,7 +9,7 @@ const PostJob = () => {
         <div className={styles.content}>
           <div>
             <span>FOR RECRUITERS</span>
-            <h2>Do You Have A Position To Post Job?</h2>
+            <h2>Do You Have A Position To Fill?</h2>
             <p>
               Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi.
               Morbi mattis ullamcorper velit.

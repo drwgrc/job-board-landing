@@ -14,7 +14,7 @@ import Subscription from '../components/Subscription/Subscription';
 const Home = () => {
   return (
     <>
-      <Hero />
+      <Hero title='Rawan' color='red' />
       <UploadResume />
       <FeaturedJobs />
       <TopCompanies />
