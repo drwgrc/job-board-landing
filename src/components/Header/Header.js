@@ -1,20 +1,22 @@
 import styles from './Header.module.css';
-import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
-import { ReactComponent as HeroSVG } from '../../assets/images/hero-illustration.svg';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import LanguageOutlinedIcon from '@mui/icons-material/LanguageOutlined';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 const Header = () => {
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', () => {
-        setScrolling(window.pageYOffset > 200);
-      });
-    }
+    const changeHeader = () => {
+      setScrolling(window.pageYOffset > 0);
+    };
+
+    window.addEventListener('scroll', changeHeader);
+
+    return () => {
+      window.removeEventListener('scroll', changeHeader);
+    };
   }, []);
 
   return (

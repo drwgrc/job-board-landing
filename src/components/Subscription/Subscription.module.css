@@ -1,7 +1,14 @@
 .subscription {
   padding-block: 8rem;
-  background-color: #17404c;
-  background-image: linear-gradient(19deg, #17404c 0%, #47165b 100%);
+  background-color: rgba(177, 194, 216, 0.88);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(22, 28, 36, 0.88),
+      rgba(22, 28, 36, 0.88)
+    ),
+    url('../../assets/images/mesh.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 
 .content {
