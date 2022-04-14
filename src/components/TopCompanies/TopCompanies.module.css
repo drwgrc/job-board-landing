@@ -13,17 +13,19 @@
 }
 
 .grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  grid-template-columns: repeat(1, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   margin: 0 auto;
-  /* max-width:  */
 }
 
 .box {
-  width: 100%;
-  display: inline-block;
-  padding: 2rem 1.6rem;
+  flex-basis: 50%;
+  flex-grow: 0;
+  max-width: 50%;
+  /* width: 100%; */
+  padding: 2rem 0;
 }
 
 /* Berkshire Hathaway color */
@@ -37,7 +39,8 @@
 }
 
 .box > div {
-  padding: 4rem 2rem;
+  padding: 4rem 0;
+  margin: 0 auto;
   border-radius: 1.6rem;
   cursor: pointer;
   text-align: center;
@@ -96,9 +99,13 @@
     font-size: 4rem;
   }
 
-  .grid {
-    /* max-width: ; */
-    grid-template-columns: repeat(2, 1fr);
+  /* .grid {
+    grid-template-columns: repeat(3, 1fr);
+  } */
+
+  .box {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
   }
 }
 
@@ -111,12 +118,13 @@
     font-size: 4.4rem;
   }
 
-  .grid {
-    /* max-width: ; */
+  /* .grid {
     grid-template-columns: repeat(4, 1fr);
-  }
+  } */
 
   .box {
+    flex-basis: 25%;
+    max-width: 25%;
     padding-block: 6.4rem;
   }
 }
@@ -126,7 +134,12 @@
     font-size: 4.8rem;
   }
 
-  .grid {
+  /* .grid {
     grid-template-columns: repeat(5, 1fr);
+  } */
+
+  .box {
+    flex-basis: 20%;
+    max-width: 20%;
   }
 }

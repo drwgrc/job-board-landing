@@ -9,7 +9,7 @@ const Header = () => {
 
   useEffect(() => {
     const changeHeader = () => {
-      setScrolling(window.pageYOffset > 0);
+      setScrolling(window.pageYOffset > 60);
     };
 
     window.addEventListener('scroll', changeHeader);
