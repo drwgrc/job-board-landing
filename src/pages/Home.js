@@ -22,7 +22,7 @@ const Home = () => {
       <GlobalConnections />
       <PostJob />
       <Testminonials />
-      <Clients />
+      {/* <Clients /> */}
       <Blog />
       <DownloadApp />
       <Subscription />

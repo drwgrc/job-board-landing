@@ -24,17 +24,6 @@ const Clients = () => {
               </div>
             </div>
           ))}
-          {IMGURLS.map((url, index) => (
-            <div className={styles.box} key={index}>
-              <div>
-                <span>
-                  <span className={styles.logoWrapper}>
-                    <img src={url} />
-                  </span>
-                </span>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

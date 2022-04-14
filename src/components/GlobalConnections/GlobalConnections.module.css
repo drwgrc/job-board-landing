@@ -3,6 +3,7 @@
 }
 
 .imgWrapper {
+  z-index: -1;
   display: none;
   width: 78rem;
   height: 65rem;
