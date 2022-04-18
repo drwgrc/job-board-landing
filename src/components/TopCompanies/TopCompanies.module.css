@@ -125,7 +125,7 @@
   .box {
     flex-basis: 25%;
     max-width: 25%;
-    padding-block: 6.4rem;
+    padding: 6.4rem 0;
   }
 }
 

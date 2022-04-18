@@ -1,7 +1,7 @@
 .clients {
   display: flex;
   flex-direction: column;
-  padding-block: 6.4rem;
+  padding: 6.4rem 0;
 }
 
 .text {
@@ -37,7 +37,7 @@
 }
 
 .box > div {
-  padding-block: 2.4rem;
+  padding: 2.4rem 0;
   background-color: white;
   color: #212b36;
   border-radius: 1.6rem;
@@ -80,7 +80,7 @@
 
 @media only screen and (min-width: 900px) {
   .clients {
-    padding-block: 12rem;
+    padding: 12rem 0;
   }
 
   .grid {

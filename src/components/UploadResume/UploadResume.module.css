@@ -1,6 +1,6 @@
 .uploadResume {
   text-align: center;
-  padding-block: 6.4rem;
+  padding: 6.4rem 0;
 }
 
 .uploadResume > div > span {
@@ -21,7 +21,7 @@
 }
 
 .stepsContainer {
-  margin-block: 6.4rem;
+  margin: 6.4rem 0;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 6.4rem;
@@ -121,7 +121,7 @@
   }
 
   .stepsContainer {
-    margin-block: 8rem;
+    margin: 8rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;

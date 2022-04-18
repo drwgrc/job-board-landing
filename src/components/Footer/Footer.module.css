@@ -135,7 +135,7 @@ a {
 }
 
 .subscribe > input {
-  padding-block: 1.4rem;
+  padding: 1.4rem 0;
   padding-left: 1.2rem;
   font-size: 1.4rem;
   box-sizing: content-box;
@@ -355,7 +355,7 @@ a {
 }
 
 .bottom > div {
-  padding-block: 2.4rem;
+  padding: 2.4rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -407,7 +407,7 @@ a {
 
 @media only screen and (min-width: 900px) {
   footer {
-    padding-block: 8rem;
+    padding: 8rem 0;
   }
 
   .main {

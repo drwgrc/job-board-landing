@@ -6,7 +6,7 @@
     rgba(145, 158, 171, 0),
     rgba(145, 158, 171, 0.12)
   );
-  padding-block: 6.4rem;
+  padding: 6.4rem 0;
 }
 
 .hotCategories > div > h2 {
@@ -19,7 +19,7 @@
 .grid {
   display: grid;
   gap: 3.2rem;
-  margin-block: 6.4rem;
+  margin: 6.4rem 0;
   grid-template-columns: repeat(1, 1fr);
 }
 
@@ -163,7 +163,7 @@
 
 @media only screen and (min-width: 900px) {
   .hotCategories {
-    padding-block: 8rem;
+    padding: 8rem 0;
   }
 
   .hotCategories > div > h2 {
@@ -172,7 +172,7 @@
 
   .grid {
     grid-template-columns: repeat(4, 1fr);
-    margin-block: 8rem;
+    margin: 8rem 0;
   }
 }
 

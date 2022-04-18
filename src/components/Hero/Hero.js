@@ -100,3 +100,19 @@ const Hero = () => {
 };
 
 export default Hero;
+
+const MyComponent = () => {
+  const [highlight, setHighlight] = useState(false);
+
+  const handleClick = () => {
+    setHighlight(!highlight);
+    console.log('clicked');
+  };
+
+  return (
+    <div>
+      <h1 className={`element ${highlight ? 'hightlight' : ''}`}>Hello word</h1>
+      <button onClick={handleClick}>Click me</button>
+    </div>
+  );
+};

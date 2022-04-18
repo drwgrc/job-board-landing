@@ -24,14 +24,17 @@
   text-decoration: none;
   appearance: none;
   border-radius: 50%;
-  padding: 0.8rem;
   position: absolute;
-  top: 1.6rem;
-  right: 1.6rem;
+  top: 2.4rem;
+  right: 2.4rem;
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .heartWrapper:hover {
   background-color: rgba(255, 72, 66, 0.08);
+  top: 1.6rem;
+  right: 1.6rem;
+  padding: 0.8rem;
 }
 
 .heartWrapper.active > svg {
@@ -125,7 +128,7 @@
 }
 
 .box > hr {
-  margin-block: 1.6rem;
+  margin: 1.6rem 0;
   border-width: 0 0 thin;
   border-color: rgba(145, 158, 171, 0.24);
   border-style: dashed;

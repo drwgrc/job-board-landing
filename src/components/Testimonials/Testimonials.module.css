@@ -1,6 +1,6 @@
 .testimonials {
   background-color: #f9fafb;
-  padding-block: 8rem;
+  padding: 8rem 0;
 }
 
 .top {
@@ -54,7 +54,7 @@
 }
 
 .swiperSlide > div > p:first-of-type {
-  margin-block: 2.4rem;
+  margin: 2.4rem 0;
 }
 
 .swiperSlide > div > h6 {
@@ -142,7 +142,7 @@
 
 @media only screen and (min-width: 900px) {
   .testimonials {
-    padding-block: 12rem;
+    padding: 12rem 0;
   }
 
   .top > div {

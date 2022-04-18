@@ -126,7 +126,7 @@
 
 @media only screen and (min-width: 900px) {
   .downloadApp {
-    padding-block: 16.8rem;
+    padding: 16.8rem 0;
     background-color: unset;
   }
 
