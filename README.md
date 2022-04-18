@@ -13,7 +13,7 @@ Landing page for a job board
 
 ## Preview
 
-![Landing](https://i.ibb.co/7tFQp4g/portfolioss.png)
+![Landing](https://i.ibb.co/D1W8nXf/jobboardss.png)
 
 ## Live
 
